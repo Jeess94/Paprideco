@@ -16,9 +16,9 @@ body {
   position: sticky;
   top: 0%;
   background-color: rgb(255 255 255);
-  display: flex;
-  justify-content: space-between;
+  
 }
+
  header img {
   width: 230px;
   height: 150px;
@@ -63,7 +63,16 @@ footer {
 footer ul {
   display: flex;
   justify-content: space-evenly;
+  list-style: none;
+
 }
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+
 /*index*/
 
 .imagen-principal img {
@@ -98,20 +107,29 @@ footer ul {
 }
 
 /*contacto*/
-fieldset {
-  border-top: rgb(214, 189, 118);
-  border-right: rgb(214, 189, 118);
-  border-bottom: rgb(214, 189, 118);
-  border-left-color: rgb(214, 189, 118);
-  padding: 10px;
 
+fieldset {
+  border: 1px solid #5d3917;
+  border: radius 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height:60uh
 }
+
 .form-control{
   width: 300px;
   text-align: center;
 }
 .form-group{
-text-align: center;
+  text-align: center;
+}
+
+.btn{
+color: #5d3917;
+background-color: #be712b;
 }
 
 /*quienes-somos*/
@@ -120,29 +138,83 @@ text-align: center;
 }
 
 /*tutoriales*/
-.mail-Tutoriales {
+.main-Tutoriales {
   padding: 20px;
 }
 
-/*MEDIA- QUERIES*/
-/*tablet*/
-@media only screen and (max-width: 768px) {
-  /*aca debes comenzar de nuevo porque estaban incorrecto los valores*/
+.video-contenedor{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
+/*MEDIA- QUERIES*/
+
+/*tablet*/
+
+@media only screen and (max-width: 768px) {
+
+.contenedor-parrafo {
+  padding: 20px;
+  text-align: justify;
+}
+
+.fotos-inicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.fotos-inicio img {
+  width: 45%;
+  margin-bottom: 20px;
+}
+/*somos*/
+
+.main-somos{
+  front: size 16px;
+  padding: 10px;
+}
+/*productos*/
+
+.imagenes-productos img{
+  margin: 5px;
+  width: 240px;
+  height: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+
+/*tutoriales*/
+
+.video-contenedor {
+  display: flex;
+  flex-direction: column;
+}
+
+ iframe{
+   width: 700px;
+   height: 280px;
+ }
+}
+  
 /*mobile*/
+
 @media only screen and (max-width: 576px) {
-  header {
-    height: 70px;
+
+  /*estilo-general*/
+  header{
+    flex-direction: column;
   }
 
   header img {
-    width: 70px;
-    height: 70px;
+    width: 90%;
+  
   }
 
   .menu-nav {
-    padding: 5px;
+    padding: 10px 0px;
   }
 
   ul li {
@@ -154,7 +226,7 @@ text-align: center;
   }
 
   .fotos-inicio {
-    width: 90%;
+  
     height: auto;
     flex-wrap: wrap;
   }
@@ -164,16 +236,33 @@ text-align: center;
     height: auto;
     margin: 1%;
   }
+/*productos*/
 
   .imagenes-productos img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     margin: 2%;
   }
 
+/*somos*/
+
   .main-somos img {
-    width: 45%;
+    width: 80%;
     height: auto;
     margin: 2%;
   }
+  
+  .contenedor-parrafo{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+  
+  /*tutoriales*/
+
+  iframe{
+    width: 500px;
+    height: 280px;
+  }
+
 }

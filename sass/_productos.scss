@@ -1,0 +1,21 @@
+/*aplico mixin*/
+
+@mixin tamaño-img ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+.imagenes-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 5px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  .imagenes-productos img {
+    margin: 5px;
+   
+    @include tamaño-img(300px,300px )
+  }

@@ -1,80 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap");
-/*estilos generales*/
-* {
-  padding: 0px;
-  margin: 0px;
-}
-
-body {
-  background-color: rgb(214, 189, 118);
-  color: rgba(66, 28, 2, 0.8196078431);
-  font-family: "Fira Sans", sans-serif;
-}
-
-header {
-  position: sticky;
-  top: 0%;
-  background-color: rgb(255, 255, 255);
-}
-
-header img {
-  width: 230px;
-  height: 150px;
-}
-
-.nav-link {
-  color: #be712b;
-  font-size: 1.4rem;
-}
-
-.contenedor-parrafo {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.contenedor-parrafo p {
-  padding: 50px;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.contenedor-parrafo img {
-  width: 50%;
-}
-
-footer {
-  margin-top: 20px;
-  padding: 20px;
-  border-top: rgb(214, 189, 118);
-  background-color: white;
-}
-
-footer ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-footer ul li {
-  list-style: none;
-}
-
-footer .bi {
-  color: #683d06;
-  font-size: 2rem;
-}
-
-/* footer img {
-  width: 50px;
-  height: 50px;
-} */
-/*index*/
 .imagen-principal img {
   width: 100%;
 }
@@ -93,7 +17,11 @@ footer .bi {
   height: 450px;
 }
 
-/*productos*/
+.main-somos {
+  padding: 20px;
+}
+
+/*aplico mixin*/
 .imagenes-productos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -109,7 +37,18 @@ footer .bi {
   height: 300px;
 }
 
-/*contacto*/
+.main-Tutoriales {
+  padding: 20px;
+}
+
+.video-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+/*aca aplique map*/
 fieldset {
   border: 1px solid #5d3917;
   border: radius 5px;
@@ -135,21 +74,71 @@ fieldset {
   background-color: #be712b;
 }
 
-/*quienes-somos*/
-.main-somos {
-  padding: 20px;
+/*variables*/
+/*estilos generales*/
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-/*tutoriales*/
-.main-Tutoriales {
-  padding: 20px;
+body {
+  background-color: rgb(214, 189, 118);
+  color: rgba(66, 28, 2, 0.8196078431);
+  font-family: "Fira Sans", sans-serif;
 }
 
-.video-contenedor {
+header {
+  position: sticky;
+  top: 0%;
+  background-color: white;
+}
+header img {
+  width: 230px;
+  height: 150px;
+}
+header .nav-link {
+  color: #be712b;
+  font-size: 1.4rem;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  border-top: rgb(214, 189, 118);
+  background-color: white;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer li {
+  list-style: none;
+}
+footer .bi {
+  color: rgba(66, 28, 2, 0.8196078431);
+  font-size: 2rem;
+}
+
+.contenedor-parrafo {
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.contenedor-parrafo p {
+  padding: 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.contenedor-parrafo img {
+  width: 50%;
 }
 
 /*MEDIA- QUERIES*/

@@ -1,0 +1,33 @@
+
+/*aca aplique map*/
+
+$mapFormulario: (
+    ancho: 300px,
+    alineacion-texto: center,
+);
+
+fieldset {
+    border: 1px solid #5d3917;
+    border: radius 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:60uh
+  }
+  
+  .form-control{
+    width: map-get($mapFormulario, ancho );
+    text-align: map-get($mapFormulario, alineacion-texto );
+   
+  }
+  .form-group{
+    text-align: map-get($mapFormulario, alineacion-texto );
+    
+  }
+  
+  .btn{
+  color: #5d3917;
+  background-color: #be712b;
+  }

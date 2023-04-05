@@ -1,45 +1,78 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap");
+@import "index";
+@import "quienes-somos";
+@import "productos";
+@import "tutoriales";
+@import "contacto";
+
+/*variables*/
+$color-base:  white;
+$color-fondo: rgb(214, 189, 118);
+$color-texto: rgba(66, 28, 2, 0.8196078431);
+$color-link: #be712b;
+$color-icono: rgba(66, 28, 2, 0.8196078431);
+$fuente-principal: "Fira Sans", sans-serif;
+$padding-general: 0px;
+$margin-general: 0px;
 
 /*estilos generales*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap");
+
+
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: $padding-general;
+  margin: $margin-general;
 }
 
 body {
-  background-color: rgb(214, 189, 118);
-  color: #421c02d1;
-  font-family: "Fira Sans", sans-serif;
+  background-color: $color-fondo;
+  color: $color-texto;
+  font-family: $fuente-principal;
 }
 
  header {
   position: sticky;
   top: 0%;
-  background-color: rgb(255 255 255);
-  
+  background-color: $color-base;
+    img {
+      width: 230px;
+      height: 150px;
+    }
+    .nav-link{
+      color: $color-link;
+      font-size: 1.4rem;
+    }
 }
 
- header img {
-  width: 230px;
-  height: 150px;
-}
-
-.nav-link{
-  color:#be712b;
-  font-size: 1.4rem;
-}
-
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  border-top: $color-fondo;
+  background-color: $color-base;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+    li{
+      list-style: none;
+    }
+  .bi{
+    color: $color-icono;
+    font-size: 2rem;
+  }
+} 
 
 .contenedor-parrafo {
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
+    
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: -10px;
 }
 .contenedor-parrafo p {
   padding: 50px;
@@ -50,111 +83,6 @@ h1 {
   width: 50%;
 }
 
-footer {
-  margin-top: 20px;
-  padding: 20px;
-  border-top: rgb(214, 189, 118);
-  background-color: white;
-}
-footer ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-footer ul li{
-  list-style: none;
-}
-
-footer .bi{
-  color: #683d06;
-  font-size: 2rem;
-
-}
-/* footer img {
-  width: 50px;
-  height: 50px;
-} */
-
-
-/*index*/
-
-.imagen-principal img {
-  width: 100%;
-}
-
-.fotos-inicio {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 5px;
-  justify-items: center;
-  margin-top: 20px;
-}
-
-.fotos-inicio img {
-  width: 300px;
-  height: 450px;
-}
-
-/*productos*/
-
-.imagenes-productos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 5px;
-  justify-items: center;
-  margin-top: 20px;
-}
-
-.imagenes-productos img {
-  margin: 5px;
-  width: 300px;
-  height: 300px;
-}
-
-/*contacto*/
-
-fieldset {
-  border: 1px solid #5d3917;
-  border: radius 5px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height:60uh
-}
-
-.form-control{
-  width: 300px;
-  text-align: center;
-}
-.form-group{
-  text-align: center;
-}
-
-.btn{
-color: #5d3917;
-background-color: #be712b;
-}
-
-/*quienes-somos*/
-.main-somos {
-  padding: 20px;
-}
-
-/*tutoriales*/
-.main-Tutoriales {
-  padding: 20px;
-}
-
-.video-contenedor{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-}
 
 /*MEDIA- QUERIES*/
 

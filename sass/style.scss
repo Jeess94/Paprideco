@@ -9,7 +9,9 @@ $color-base:  white;
 $color-fondo: rgb(214, 189, 118);
 $color-texto: rgba(66, 28, 2, 0.8196078431);
 $color-link: #be712b;
-$color-icono: rgba(66, 28, 2, 0.8196078431);
+$color-icono: $color-texto;
+$color-boton: #5d3917;
+$color-fondoboton:$color-link;
 $fuente-principal: "Fira Sans", sans-serif;
 $padding-general: 0px;
 $margin-general: 0px;
@@ -35,13 +37,19 @@ body {
   top: 0%;
   background-color: $color-base;
     img {
-      width: 230px;
+      width: 500px;
       height: 150px;
     }
     .nav-link{
       color: $color-link;
       font-size: 1.4rem;
+       transition: background-color 0.3s ease;
     }
+    
+    .nav-link:hover {
+      background-color: $color-texto;
+    }
+    
 }
 
 footer {
@@ -82,6 +90,7 @@ h1 {
 .contenedor-parrafo img {
   width: 400px;
 }
+
 
 
 /*MEDIA- QUERIES*/

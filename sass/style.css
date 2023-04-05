@@ -93,12 +93,16 @@ header {
   background-color: white;
 }
 header img {
-  width: 230px;
+  width: 500px;
   height: 150px;
 }
 header .nav-link {
   color: #be712b;
   font-size: 1.4rem;
+  transition: background-color 0.3s ease;
+}
+header .nav-link:hover {
+  background-color: rgba(66, 28, 2, 0.8196078431);
 }
 
 footer {

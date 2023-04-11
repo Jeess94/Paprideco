@@ -43,7 +43,7 @@ body {
     .nav-link{
       color: $color-link;
       font-size: 1.4rem;
-       transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease;
     }
     
     .nav-link:hover {
@@ -207,6 +207,8 @@ h1 {
     flex-direction: column;
     text-align: justify;
   }
+  
+
   
   /*tutoriales*/
 

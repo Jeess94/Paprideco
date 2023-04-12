@@ -10,8 +10,6 @@ $color-fondo: rgb(214, 189, 118);
 $color-texto: rgba(66, 28, 2, 0.8196078431);
 $color-link: #be712b;
 $color-icono: $color-texto;
-$color-boton: #5d3917;
-$color-fondoboton:$color-link;
 $fuente-principal: "Fira Sans", sans-serif;
 $padding-general: 0px;
 $margin-general: 0px;
@@ -186,7 +184,7 @@ h1 {
     height: auto;
     margin: 1%;
   }
-/*productos*/
+  /*productos*/
 
   .imagenes-productos img {
     width: 90%;
@@ -194,22 +192,24 @@ h1 {
     margin: 2%;
   }
 
-/*somos*/
+  /*somos*/
 
   .main-somos img {
     width: 80%;
     height: auto;
     margin: 2%;
   }
-  
+    
   .contenedor-parrafo{
     display: flex;
     flex-direction: column;
     text-align: justify;
   }
   
+  .contenedor-parrafo img{
+    order: -1;
+  } 
 
-  
   /*tutoriales*/
 
   iframe{
